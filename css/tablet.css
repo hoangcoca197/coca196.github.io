@@ -1,0 +1,87 @@
+/* Responsive web design for tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .offset-md-right {
+    margin-right: 8.3333333%;
+  }
+
+  .img-wd {
+    width: 325px;
+    height: 175px;
+    display: block;
+  }
+
+  #nav-bar .container {
+    display: flex;
+  }
+
+  #nav-bar .container .selfie {
+    width: 200px;
+    display: flex;
+  }
+
+  #about .container {
+    max-width: 750px;
+    padding: 0;
+    margin: auto;
+  }
+
+  #about .section-title {
+    padding: 18px 6px;
+    margin: 0;
+  }
+
+  #target,
+  #personal-info {
+    width: 50%;
+    padding: 18px;
+  }
+
+  #certificate .cert-item {
+    flex-wrap: wrap;
+    padding-right: 12px;
+  }
+
+  #certificate .cert-detail h3 {
+    margin-top: 12px;
+  }
+}
+
+/* PC responsive resolution */
+@media (min-width: 992px) {
+  #about .container {
+    max-width: 100%;
+  }
+
+  .bor-style {
+    width: 33.33333%;
+  }
+
+  .img-wd {
+    width: 35%;
+  }
+
+  #job-info .container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1170px;
+    margin: auto;
+  }
+
+  #certificate .cert-item {
+    flex-wrap: nowrap;
+    padding-bottom: 24px;
+  }
+
+  #certificate .cert-detail {
+    border: none;
+  }
+
+  .icon {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* END */

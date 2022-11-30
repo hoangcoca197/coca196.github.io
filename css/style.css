@@ -1,0 +1,459 @@
+/* set margin for CSS if 0 and set the font */
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* common */
+
+section > .container {
+  width: 1170px; /* limit the width of all content is 1170px */
+  margin: auto;
+}
+
+.bg-grey {
+  background: #f7f7f7; /* background color #f7f7f7 */
+}
+
+.bor-style {
+  border: 1px solid #ddd; /* set the border style */
+  margin: 12px;
+}
+
+.blue {
+  background-color: rgb(28, 128, 221);
+}
+.grey {
+  background-color: #ccc;
+}
+
+.subtile-desc {
+  font-size: 64px;
+  opacity: 0.2;
+}
+
+.cert-border-left {
+  border-left: 1px solid #d6c08d;
+  padding-left: 12px;
+}
+
+.cert-border-bottom {
+  border-bottom: 1px solid #d6c08d;
+}
+
+.wd-25 {
+  width: 25%;
+}
+
+.wd-75 {
+  width: 75%;
+}
+
+.mrg-30 {
+  margin: 30px;
+}
+
+.img-wd {
+  width: 35%;
+}
+
+.current {
+  /* make the circle 2 at start and end part of a block */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  background: #456bd9;
+  border-radius: 100px; /* Make the circle */
+  color: #fff;
+  padding: 4px 16px;
+  line-height: 1.4;
+}
+
+/* main */
+
+/* Begin the banner CSS */
+#banner {
+  position: relative;
+}
+
+#banner .bg-banner {
+  background: url(../images/banner.jpg); /* insert the background image */
+  height: 759px;
+  background-repeat: no-repeat; /* set the picture appear only 1, no repeat */
+  background-size: cover; /* set the size of backgound equal to the width of bowser */
+  background-position: center; /* the background will be stay in center when zoom in or out */
+  filter: brightness(60%); /* set the bright of img */
+}
+
+#banner .banner-desc {
+  position: absolute; /* set the position is become child of banner to set text laying above img */
+  text-align: center; /* set the text to center */
+  color: #fff;
+  line-height: 34px;
+  left: 50%; /* Make the text laying in center of text */
+  top: 15%; /* text in laying under top edge 15% of total heigh */
+  transform: translateX(-50%); /* Make the text laying in center of text */
+}
+
+#banner .banner-desc span,
+#banner .banner-desc h1 {
+  font-weight: lighter;
+}
+/* End the banner CSS */
+
+/* Begin the Navbar CSS */
+#nav-bar {
+  text-align: center;
+}
+
+#nav-bar .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-bar .container a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  width: 150px;
+  padding: 16px 0;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-size: 15px;
+}
+
+#nav-bar .container i {
+  color: blue;
+  padding-right: 4px;
+}
+
+/* increase the width of block contain the img element */
+#nav-bar .container .selfie {
+  width: 300px;
+}
+
+/* add the img into the center of Navbar */
+#nav-bar .container .selfie img {
+  position: absolute;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* End the Navbar CSS */
+
+/* Begin the About CSS */
+#about .section-title {
+  padding: 18px 6px;
+  margin: 18px 6px;
+  font-weight: 400;
+}
+
+#target {
+  padding: 24px;
+}
+
+#target p {
+  line-height: 1.6;
+  opacity: 0.7;
+  padding: 12px;
+  text-align: justify;
+}
+
+#personal-info {
+  background-color: #eee;
+  padding: 24px;
+}
+
+#personal-info span {
+  font-weight: 600;
+}
+
+#personal-info ul {
+  padding: 0;
+}
+
+#personal-info li {
+  list-style: none;
+  opacity: 0.7;
+  padding: 10px 12px;
+}
+
+#personal-info .icon {
+  margin: 18px 0;
+}
+
+#personal-info i {
+  color: blue;
+  padding: 12px;
+  font-size: 24px;
+}
+
+#personal-info a:hover {
+  opacity: 0.8;
+  line-height: 26px;
+}
+/* End the About CSS */
+
+/* Begin the Job info CSS */
+#job-info {
+  margin-top: 40px;
+}
+
+#job-info .container h1 {
+  padding: 18px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#job-info .container .job-detail {
+  top: 0;
+  padding-right: 24px;
+  font-size: 15px;
+}
+
+#job-info .container .job-subtitle {
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+#job-info .container .detail {
+  padding-top: 8px;
+  line-height: 1.4;
+  text-align: justify;
+  color: gray;
+}
+
+/* align the time css into same line */
+#job-info .container .time {
+  display: inline-block;
+  color: gray;
+  font-style: italic;
+}
+/* seperate the table */
+#job-info .container table {
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+#job-info .container th {
+  width: 50px;
+  height: 0;
+}
+
+#job-info .container .skill-detail,
+#job-info .container .language-detail {
+  padding: 24px 18px;
+}
+
+#job-info .skill-detail p,
+#job-info .language-detail p {
+  padding-left: 5px;
+  padding-bottom: 8px;
+}
+
+#job-info ul {
+  list-style: none; /* Remove default bullets */
+}
+
+/* Add the new bullet style for Li element
+i had coppied this from stack over flow :D */
+#job-info ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #456bd9; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /*Also needed for space (tweak if needed) */
+  margin-left: -0.75em; /* Also needed for space (tweak if needed) */
+  transform: translateY(
+    75%
+  ); /* Move from the between above line to between bottom line*/
+  font-size: 2em;
+}
+
+.hobby-content .hobby-list {
+  display: flex;
+  margin: 40px 0px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
+/* make the Circle for item */
+.hobby-item i {
+  font-size: 28px;
+  display: flex;
+  padding: 24px;
+  border: 1px solid #456bd9;
+  color: #456bd9;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.hobby-item p {
+  display: block;
+  text-align: center;
+  padding-top: 12px;
+  color: grey;
+}
+
+#certificate {
+  min-height: 350px;
+  margin-top: 40px;
+}
+
+/* End the Job info CSS */
+
+/* Begin the Certificate CSS */
+#certificate .section-title {
+  padding: 40px 8px 0px 8px;
+  font-weight: 500;
+}
+
+/* display the layout of Certificate to grid 2x2 with same width */
+#certificate .cert-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto auto;
+  padding: 8px;
+}
+
+#certificate .cert-item {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#certificate .cert-detail {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+#certificate .cert-detail h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+#certificate .cert-detail p {
+  color: grey;
+  padding-top: 12px;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+/* End the Certificate CSS */
+
+/* Begin the Project CSS */
+#project .section-title {
+  padding-top: 40px;
+}
+
+#project .project-list {
+  display: flex;
+  margin: 0 -8px;
+}
+
+#project .project-item {
+  margin: 30px 8px;
+  border: 1px solid #ccc;
+}
+
+#project h3 {
+  padding: 18px;
+  border-top: 1px solid #ccc;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#project .project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 15px;
+  color: grey;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+#project .project-icon i,
+#project .project-icon p {
+  padding: 4px;
+  margin: 0;
+}
+
+#project .project-desc {
+  color: grey;
+}
+
+#project .project-desc span {
+  display: inline-block;
+}
+
+#project .project-desc p {
+  display: flex;
+  padding: 16px 8px;
+  border-top: 1px solid #ccc;
+}
+
+#project a {
+  text-decoration: none;
+}
+/* End the Project CSS */
+
+/* Begin the Footer CSS */
+#footer {
+  padding: 40px 0;
+  color: gray;
+  text-align: center;
+}
+
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: gray;
+}
+
+#footer a:hover {
+  opacity: 0.8;
+}
+
+#footer i {
+  font-size: 16px;
+  display: flex;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(28, 128, 221);
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4px;
+}
+/* End the Footer CSS */
+
+/* End */
